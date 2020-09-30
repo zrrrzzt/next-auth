@@ -5,7 +5,7 @@
 
 Temporary fork to fix a problem for sites with basePath. Will be closed when/if it is solved in the original module.
 
-This fork adds support for the environment variable `NEXT_PUBLIC_NEXTAUTH_URL` 
+This fork adds support for the environment variable `NEXT_PUBLIC_NEXTAUTH_URL`. This will solve the problem that the client does not pick up the basePath. 
 
 ## Overview
 
