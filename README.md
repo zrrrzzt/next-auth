@@ -3,6 +3,10 @@
 ![Build Test](https://github.com/nextauthjs/next-auth/workflows/Build%20Test/badge.svg)
 ![Integration Test](https://github.com/nextauthjs/next-auth/workflows/Integration%20Test/badge.svg)
 
+Temporary fork to fix a problem for sites with basePath. Will be closed when/if it is solved in the original module.
+
+This fork adds support for the environment variable `NEXT_PUBLIC_NEXTAUTH_URL` 
+
 ## Overview
 
 NextAuth.js is a complete open source authentication solution for [Next.js](http://nextjs.org/) applications.

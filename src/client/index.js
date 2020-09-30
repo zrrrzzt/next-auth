@@ -22,8 +22,8 @@ import parseUrl from '../lib/parse-url'
 // 2. When invoked server side the value is picked up from an environment
 //    variable and defaults to 'http://localhost:3000'.
 const __NEXTAUTH = {
-  baseUrl: parseUrl(process.env.NEXTAUTH_URL || process.env.VERCEL_URL).baseUrl,
-  basePath: parseUrl(process.env.NEXTAUTH_URL).basePath,
+  baseUrl: parseUrl(process.env.NEXTAUTH_URL || process.env.NEXT_PUBLIC_NEXTAUTH_URL || process.env.VERCEL_URL).baseUrl,
+  basePath: parseUrl(process.env.NEXT_PUBLIC_NEXTAUTH_URL).basePath,
   keepAlive: 0, // 0 == disabled (don't send); 60 == send every 60 seconds
   clientMaxAge: 0, // 0 == disabled (only use cache); 60 == sync if last checked > 60 seconds ago
   // Properties starting with _ are used for tracking internal app state
